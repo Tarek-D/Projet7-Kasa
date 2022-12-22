@@ -1,0 +1,30 @@
+.dropdown-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dropdown-card img {
+    min-width: 30px;
+    height: 30px;
+}
+
+.dropdown-card-title {
+    color: #F7F7F7;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.dropdown-card-body {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-card-body p {
+    color: #FF6060;
+}
