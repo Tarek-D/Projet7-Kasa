@@ -1,0 +1,41 @@
+.image-carousel {
+    position: relative;
+    height: 415px;
+    border-radius: 20px;
+}
+
+.image-carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.btn-next {
+    position: absolute;
+    left: 92.26%;
+    right: 0%;
+    top: 33.93%;
+    bottom: 37.24%;
+}
+
+.btn-previous {
+    position: absolute;
+    left: 0%;
+    right: 92.26%;
+    top: 35.74%;
+    bottom: 35.44%;
+}
+
+.carousel-counter {
+    position: absolute;
+    left: 48.95%;
+    right: 49.11%;
+    top: 86.19%;
+    bottom: 6.01%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
