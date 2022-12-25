@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef } from "react";
 import DropdownCard from "../../Components/DropdownCard/DropdownCard.jsx";
 import Gallery from "../../Components/Gallery/Gallery.jsx";
 import Tag from "../../Components/Tag/Tag.jsx";
@@ -9,16 +10,28 @@ import Rate from "../../Components/Rate/Rate.jsx";
 import Host from "../../Components/Host/Host.jsx";
 
 function AppartmentDetail() {
-  const location = useLocation();
+  const location = useLocation() || "default-id";
   const navigate = useNavigate();
   const id = location.state;
-  const appartment = appartments.find((appartment) => appartment.id === id);
   
+  const appartment = appartments.find((appartment) => appartment.id === id);
+  const appartmentRef = useRef(appartment)
+
+  useEffect(() => {
+    if (!appartmentRef.current) {
+      navigate("/error");
+    }
+  }, [navigate]);
+
   if (!appartment) {
-    navigate("/error");
     return null;
   }
-  const equipments = appartment.equipments.join("\n");
+  const equipments = appartment.equipments.map((equipment) => (
+    <>
+      {equipment}
+      <br />
+    </>
+  ));
   
   return (
     <div>
