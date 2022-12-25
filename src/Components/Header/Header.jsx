@@ -7,17 +7,16 @@ function Header() {
   return (
     <header>
       <Link to="/" className="header-link">
-      <img src={logo} alt="Logo de l'entreprise Kasa" />
+        <img src={logo} alt="Logo de l'entreprise Kasa" />
       </Link>
-        
-        <nav className="header-navBar">
-      <Link to="/" className="header-link">
-        Acceuil
-      </Link>
-      <Link to="/About" className="header-link">
-        A propos
-      </Link>
-    </nav>
+      <nav className="header-navBar">
+        <Link to="/" className="header-link">
+          Acceuil
+        </Link>
+        <Link to="/About" className="header-link">
+          A propos
+        </Link>
+      </nav>
     </header>
   );
 }
