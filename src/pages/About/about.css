@@ -5,16 +5,15 @@
 }
 
 .about-section img {
-    width: 1240px;
-    height: 223px;
+    width: 90%;
 }
 
-.card-dropdown {
-    width: 1023px;
+.about-section .card-dropdown {
+    width: 80%;
     margin-top: 30px;
 }
 
-.card-dropdown img {
+.about-section .card-dropdown img {
     width: 14px;
     height: 23px;
 }
