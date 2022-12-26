@@ -23,12 +23,61 @@
     justify-content: space-between;
 }
 
-.card-dropdown {
-    width: 582px;
+.description-equipment .card-dropdown {
+    width: 48%;
 }
 
 .appartment-details {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.host-and-rate .host {
+    margin-bottom: 20px;
+    justify-content: end;
+}
+
+.host-and-rate img {
+    width: 64px;
+    height: 64px;
+}
+
+@media screen and (max-width: 480px) {
+    .appartment-title {
+        font-size: 18px;
+    }
+
+    .location-text {
+        font-size: 14px;
+    }
+
+    .appartment-details {
+        flex-direction: column;
+    }
+
+    .host-and-rate {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .host-and-rate img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .description-equipment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-equipment .card-dropdown {
+        width: 100%;
+        margin-top: 10px;
+    }
+
 }

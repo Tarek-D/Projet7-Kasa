@@ -31,3 +31,16 @@
     text-decoration-line: underline;
     color: #FF6060;
 }
+
+@media screen and (max-width: 480px) {
+    .error-page-title {
+        font-size: 96px;
+    }
+    .error-description {
+        font-size: 18px;
+    }
+
+    .error-link a {
+        font-size: 14px;
+    }
+}

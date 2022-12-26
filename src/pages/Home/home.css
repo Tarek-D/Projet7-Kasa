@@ -3,7 +3,20 @@
     justify-content: center;
     background: #F7F7F7;
     flex-wrap: wrap;
-    width: 1240px;
     margin-top: 30px;
 }
 
+.img-home-header {
+    width: 99%;
+}
+
+@media screen and (max-width: 390px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        Width: 335px;
+        Height: 255px;
+    }
+}
