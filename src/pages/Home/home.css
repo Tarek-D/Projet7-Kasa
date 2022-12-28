@@ -1,3 +1,20 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+main, header {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 390px) {
+    main, header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 .cards {
     display: flex;
     justify-content: center;
@@ -7,7 +24,7 @@
 }
 
 .img-home-header {
-    width: 99%;
+    width: 100%;
 }
 
 @media screen and (max-width: 390px) {
