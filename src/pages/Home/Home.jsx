@@ -5,18 +5,22 @@ import "./home.css";
 
 function Home() {
   return (
+    <main>
     <div>
-      <img src={image} alt="" />
+      <img src={image} alt="" className="img-home-header" />
       <section className="cards">
-        { appartments.map((appartement) => (
+        { appartments.map((appartement, index) => (
           <Card
             id={appartement.id}
             image={appartement.cover}
             title={appartement.title}
+            key={index}
           />
+          
         ))}
       </section>
     </div>
+    </main>
   );
 }
 
