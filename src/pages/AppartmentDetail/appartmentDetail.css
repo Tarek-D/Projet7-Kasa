@@ -21,6 +21,7 @@
 .description-equipment {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .description-equipment .card-dropdown {
@@ -38,7 +39,7 @@
     justify-content: end;
 }
 
-.host-and-rate img {
+.host-and-rate .host img {
     width: 64px;
     height: 64px;
 }
