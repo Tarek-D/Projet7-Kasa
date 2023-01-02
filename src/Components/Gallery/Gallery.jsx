@@ -19,7 +19,7 @@ function Gallery({ images }) {
             { images.length > 1 && 
         <div className="btn-previous" onClick={handlePreviousClick}><img src={arrowback} alt="" /></div>
       }
-      <img src={images[currentIndex]} alt="Carousel image" />
+      <img src={images[currentIndex]} className="gallery" alt={"Carousel image " + currentIndex} />
       { images.length > 1 && 
         <p className="carousel-counter">{currentIndex + 1}/{images.length}</p>
       }
