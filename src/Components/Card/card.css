@@ -26,7 +26,4 @@
 }
 
 
-@media screen and (max-width: 390px) {
-    .card {
-    }
-}
+@media screen and (max-width: 390px) {}
