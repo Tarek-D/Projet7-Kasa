@@ -13,29 +13,49 @@
 
 .btn-next {
     position: absolute;
-    left: 92.26%;
+    left: 92%;
     right: 0%;
-    top: 33.93%;
-    bottom: 37.24%;
+    top: 34%;
+    bottom: 37%;
 }
 
 .btn-previous {
     position: absolute;
     left: 0%;
-    right: 92.26%;
-    top: 35.74%;
-    bottom: 35.44%;
+    right: 92%;
+    top: 36%;
+    bottom: 35%;
 }
+
+
 
 .carousel-counter {
     position: absolute;
-    left: 48.95%;
-    right: 49.11%;
-    top: 86.19%;
-    bottom: 6.01%;
+    left: 49%;
+    right: 49%;
+    top: 86%;
+    bottom: 6%;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 390px) {
+    .btn-next img {
+        height: 24px;
+        width: 24px;
+    }
+    .btn-previous img {
+        height: 24px;
+        width: 24px;
+    }
+    .image-carousel {
+        height: 255px;
+    }
+
+    .carousel-counter {
+        display: none;
+    }
 }
