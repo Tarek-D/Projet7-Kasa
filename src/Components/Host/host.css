@@ -8,8 +8,6 @@
 }
 
 .host img {
-    /* width: 64px;
-    height: 64px; */
     object-fit: cover;
     border-radius: 100px;
     margin-left: 20px;
