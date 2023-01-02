@@ -1,14 +1,22 @@
 import "./host.css";
 
 function Host({name, img}) {
-    const html = name.split(' ').join('<br>');
+    const nameParts = name.split(' ');
 
     return (
         <div className="host">
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-            <img src={img} alt="" />
+            {nameParts.map((part, index) => (
+                <>
+                    {part}
+                    {index < nameParts.length - 1 && <br />}
+                </>
+            ))}
+            <img src={img} alt={"photo de " + name}/>
         </div>
     )
 }
 
 export default Host;
+
+
+
