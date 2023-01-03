@@ -19,11 +19,8 @@
     color: white;
     left: 6%;
     right: 6%;
-    top: 79%;
     bottom: 6%;
     font-weight: 500;
     font-size: 18px;
 }
 
-
-@media screen and (max-width: 390px) {}
