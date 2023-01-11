@@ -3,6 +3,7 @@ header {
     flex-direction: row;
     align-items: baseline;
     margin-bottom: 30px;
+    padding-left: 0;
 }
 
 header img {
@@ -33,11 +34,19 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+
+    header {
+        align-items: center;
+        justify-content: normal;
+        text-transform: uppercase;
+    }
+
     header img {
-        width: 97px;
-        height: 27px;
+        width: 80%;
+        padding-left: 10px;
     }
     .header-link {
         font-size: 12px;
+        margin-left: 10px;
     }
 }
