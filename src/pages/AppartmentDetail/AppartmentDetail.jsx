@@ -31,48 +31,16 @@ function AppartmentDetail() {
     });
   }, [id])
 
-  const equipments = logement.equipments.map((equipment) => (
+  const equipments = logement.equipments.map((equipment, index) => (
     <>
       {equipment}
-      <br />
+      <br key={index} />
     </>
   ));
 
   if (logement.title === undefined){
     return <Error />
   }
-
-
-
-  /*
-  let mapEquipement = logement.equipments.map((l, index) => {
-    <><p> {logement.equipments[index]} </p> <br/></>
-  })
-  */
-
-
-  /*
-  const location = useLocation() || "default-id";
-  const navigate = useNavigate();
-  const id = location.state;
-  const { iduseParams } = useParams();
-  console.log(iduseParams);
-  // ISSUE TO FIX IF ACCESSING FROM URL, USER DOESNT HAVE USE LOCATON STATE 
-  
-  const appartment = appartments.find((appartment) => appartment.id === id);
-  const appartmentRef = useRef(appartment)
-
-  useEffect(() => {
-    if (!appartmentRef.current) {
-      navigate("/error");
-    }
-  }, [navigate]);
-
-  if (!appartment) {
-    return null;
-  }
- 
-  */
 
   return (
     <main>
@@ -99,7 +67,7 @@ function AppartmentDetail() {
             title="Description"
             description={logement.description}
           />
-          <DropdownCard title="Equipement" description={equipments} />             
+          <DropdownCard title="Equipement" description={equipments} key={equipments.index}/>             
         </div>
       </div>
     </main>
