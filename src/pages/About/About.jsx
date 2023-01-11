@@ -16,12 +16,14 @@ const abouts = {
 
 function About() {
   return (
+    <main>
     <div className="about-section">
       <img src={image} alt={altDescription} />
       {Object.entries(abouts).map(([key, value], index) => (
         <DrowpdonCard key={index} title={key} description={value} />
       ))}
     </div>
+    </main>
   );
 }
 
