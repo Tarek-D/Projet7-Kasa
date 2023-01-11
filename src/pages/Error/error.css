@@ -43,4 +43,8 @@
     .error-link a {
         font-size: 14px;
     }
+
+    .error-page {
+        margin-bottom: 100px;
+    }
 }
