@@ -35,6 +35,7 @@
 }
 
 .host-and-rate .host {
+    font-size: 18px;
     margin-bottom: 20px;
     justify-content: end;
 }
@@ -61,20 +62,27 @@
         margin-top: 10px;
     }
 
+    .host-and-rate .host {
+        font-size: 12px;
+    }
+
     .host-and-rate {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        font-size: 13px;
         width: 100%;
         margin-top: 10px;
-        font-size: 12px;
+    }
+
+    .host-and-rate .host img {
+        width: 32px;
+        height: 32px;
     }
 
     .host-and-rate img {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
 
     .description-equipment {
