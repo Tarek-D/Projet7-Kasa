@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<LayoutBlank />}>
+        <Route element={<LayoutBlank />}>
           <Route path="*" element={<Error />} />
         </Route>
         <Route element={<LayoutDefault />}>
