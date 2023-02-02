@@ -3,7 +3,7 @@ import "./dropdownCard.css";
 import arrowUp from "../../assets/dropdownCardArrows/arrow-up.svg";
 import arrowDown from "../../assets/dropdownCardArrows/arrow-down.svg";
 
-function DropdownCard({ title, description, key}) {
+function DropdownCard({ title, description, id }) {
   const [isOpen, setisOpen] = useState(false);
 
   const handleToggle = (e) => {
