@@ -24,4 +24,8 @@
     .about-section img {
         height: 223px;
     }
+
+    .about-section .card-dropdown {
+        width: 100%;
+    }
 }
