@@ -15,13 +15,13 @@
 .tag-list {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .description-equipment {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .description-equipment .card-dropdown {
