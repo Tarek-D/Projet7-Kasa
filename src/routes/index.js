@@ -9,14 +9,19 @@ import Error from "../pages/Error/Error.jsx";
 function App() {
   return (
     <BrowserRouter>
+    {/* This route will be used to display the Error component whenever the URL 
+    does not match any of the other defined routes. */}
       <Routes>
         <Route element={<LayoutBlank />}>
           <Route path="*" element={<Error />} />
         </Route>
+        {/* This route will be used as a wrapper for the other pages in the application */}
         <Route element={<LayoutDefault />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/appartmentDetail/:id" element={<AppartmentDetail />} />
+          {/* dynamic parameter that can change 
+          based on the appartment selected by the user */}
         </Route>
       </Routes>
     </BrowserRouter>
