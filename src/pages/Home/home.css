@@ -22,10 +22,16 @@ main, header {
     font-weight: 500;
     top: 50%;
     left: 50%;
+    margin: 0;
     transform: translate(-50%, -50%);
 }
 
+.top-img-and-title img {
+    filter: brightness(70%);
+}
+
 .cards {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 20px;
