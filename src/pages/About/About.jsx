@@ -20,7 +20,7 @@ function About() {
     <div className="about-section">
       <img src={image} alt={altDescription} />
       {Object.entries(abouts).map(([key, value], index) => (
-        <DrowpdonCard id={index} title={key} description={value} />
+        <DrowpdonCard key={index} id={index} title={key} description={value} />
       ))}
     </div>
     </main>
