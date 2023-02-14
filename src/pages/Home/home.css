@@ -48,7 +48,7 @@ main, header {
     border-radius: 20px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 760px) {
     main, header {
         padding-left: 10px;
         padding-right: 10px;

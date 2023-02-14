@@ -20,7 +20,7 @@
     height: 23px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
     .about-section img {
         height: 223px;
     }

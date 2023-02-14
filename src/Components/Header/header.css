@@ -33,7 +33,7 @@ header {
     text-decoration-line: underline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
 
     header {
         align-items: center;

@@ -32,7 +32,7 @@
     color: #FF6060;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
     .error-page-title {
         font-size: 96px;
     }
