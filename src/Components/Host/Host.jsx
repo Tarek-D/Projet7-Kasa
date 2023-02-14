@@ -7,6 +7,7 @@ function Host({name, img}) {
     return (
         <div className="host">
           {nameParts.map((part, index) => (
+            // Render in two lines
             <React.Fragment key={index}>
               {part}
               {index < nameParts.length - 1 && <br />}

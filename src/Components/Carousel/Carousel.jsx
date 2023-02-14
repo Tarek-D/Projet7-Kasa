@@ -5,6 +5,8 @@ import "./carousel.css";
 
 function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  // useState hook to keep track of the current image index and updates it 
+  // accordingly when the previous or next button is clicked. 
 
   const handlePreviousClick = () => {
     setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
@@ -16,6 +18,8 @@ function Carousel({ images }) {
 
   return (
     <div className="image-carousel">
+      {/* conditionally renders the previous and next buttons and a counter only 
+      if there are multiple images */}
       {images.length > 1 && (
         <div className="btn-previous" onClick={handlePreviousClick}>
           <img src={arrowback} alt="" />

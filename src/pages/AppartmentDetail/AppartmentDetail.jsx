@@ -10,6 +10,8 @@ import Host from "../../Components/Host/Host.jsx";
 import Error from "../Error/Error";
 
 function AppartmentDetail() {
+
+  // set to an object containing empty arrays and strings
   const [logement, setLogement] = useState({
     tags: [],
     equipments: [],
@@ -21,6 +23,7 @@ function AppartmentDetail() {
 
   const { id } = useParams();
 
+  // manage the state of the apartment object
   useEffect(() => {
     appartments.map((house) => {
       if (house.id === id) {
@@ -30,6 +33,7 @@ function AppartmentDetail() {
     });
   }, [id]);
 
+  // Render equipements in separate lines
   const equipments = logement.equipments.map((equipment, index) => (
     <>
       {equipment}
@@ -37,6 +41,7 @@ function AppartmentDetail() {
     </>
   ));
 
+  // Error page if logement detail is undefined
   if (logement.title === undefined) {
     return <Error />;
   }

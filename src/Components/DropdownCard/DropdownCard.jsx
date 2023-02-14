@@ -15,6 +15,7 @@ function DropdownCard({ title, description, id }) {
       <div className="dropdown-card-header" onClick={handleToggle}>
         <span className="dropdown-card-title">{title}</span>
         <div className="btn-arrow">
+          {/* Render ternary */}
           {isOpen ? (
             <img src={arrowUp} alt="up arrow" />
           ) : (
@@ -22,6 +23,7 @@ function DropdownCard({ title, description, id }) {
           )}
         </div>
       </div>
+      {/* Render if isOpen true */}
       {isOpen && (
         <div className="dropdown-card-body">
           <p className="dropdown-card-description">{description}</p>
