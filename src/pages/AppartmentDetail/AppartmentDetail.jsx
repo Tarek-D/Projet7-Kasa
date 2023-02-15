@@ -33,18 +33,18 @@ function AppartmentDetail() {
     });
   }, [id]);
 
-  // Render equipements in separate lines
-  const equipments = logement.equipments.map((equipment, index) => (
+  // Error page if logement detail is undefined
+  if (logement.title === undefined) {
+    return <Error />;
+  }
+
+   // Render equipements in separate lines
+   const equipments = logement.equipments.map((equipment, index) => (
     <>
       {equipment}
       <br key={index} />
     </>
   ));
-
-  // Error page if logement detail is undefined
-  if (logement.title === undefined) {
-    return <Error />;
-  }
 
   return (
     <main>
