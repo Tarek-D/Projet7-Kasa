@@ -8,7 +8,6 @@ main, header {
     padding-right: 50px;
 }
 
-
 @media screen and (max-width: 760px) {
     main, header {
         padding-left: 10px;
