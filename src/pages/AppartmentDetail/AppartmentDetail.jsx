@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import DropdownCard from "../../Components/DropdownCard/DropdownCard.jsx";
+import Collapse from "../../Components/Collapse/Collapse.jsx";
 import Carousel from "../../Components/Carousel/Carousel.jsx";
 import Tag from "../../Components/Tag/Tag.jsx";
 import appartments from "../../data/appartments.json";
@@ -66,11 +66,11 @@ function AppartmentDetail() {
           </div>
         </div>
         <div className="description-equipment">
-          <DropdownCard
+          <Collapse
             title="Description"
             description={logement.description}
           />
-          <DropdownCard
+          <Collapse
             title="Equipement"
             description={equipments}
             key={equipments.index}

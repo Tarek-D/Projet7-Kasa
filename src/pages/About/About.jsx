@@ -1,4 +1,4 @@
-import DrowpdonCard from "../../Components/DropdownCard/DropdownCard.jsx";
+import DrowpdonCard from "../../Components/Collapse/Collapse.jsx";
 import image from "../../assets/About/Section1.png";
 import "./about.css";
 

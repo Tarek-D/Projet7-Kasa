@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./dropdownCard.css";
+import "./collapse.css";
 import arrowUp from "../../assets/dropdownCardArrows/arrow-up.svg";
 import arrowDown from "../../assets/dropdownCardArrows/arrow-down.svg";
 
-function DropdownCard({ title, description, id }) {
+function Collapse({ title, description, id }) {
   const [isOpen, setisOpen] = useState(false);
 
   const handleToggle = (e) => {
@@ -33,4 +33,4 @@ function DropdownCard({ title, description, id }) {
   );
 }
 
-export default DropdownCard;
+export default Collapse;
