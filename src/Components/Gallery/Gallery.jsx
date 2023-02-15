@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import arrowback from "../../assets/Arrows/arrow_back.svg";
 import arrowforward from "../../assets/Arrows/arrow_forward.svg";
-import "./carousel.css";
+import "./gallery.css";
 
-function Carousel({ images }) {
+function Gallery({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   // useState hook to keep track of the current image index and updates it 
   // accordingly when the previous or next button is clicked. 
@@ -44,4 +44,4 @@ function Carousel({ images }) {
   );
 }
 
-export default Carousel;
+export default Gallery;

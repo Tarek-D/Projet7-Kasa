@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Collapse from "../../Components/Collapse/Collapse.jsx";
-import Carousel from "../../Components/Carousel/Carousel.jsx";
+import Gallery from "../../Components/Gallery/Gallery.jsx";
 import Tag from "../../Components/Tag/Tag.jsx";
 import appartments from "../../data/appartments.json";
 import "./appartmentDetail.css";
@@ -49,7 +49,7 @@ function AppartmentDetail() {
   return (
     <main>
       <div>
-        <Carousel images={logement.pictures} />
+        <Gallery images={logement.pictures} />
         <div className="appartment-details">
           <div>
             <h1 className="appartment-title">{logement.title}</h1>
