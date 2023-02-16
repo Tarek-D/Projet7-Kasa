@@ -20,7 +20,7 @@ function About() {
     <div className="about-section">
       <img src={image} alt={altDescription} />
       {/* maps through the "abouts" object using the "Object.entries()" 
-      method to generate a "DropdownCard" component for each title-description pair, 
+      method to generate a "Collapse" component for each title-description pair, 
       with a unique key "index" and "id" prop */}
       {Object.entries(abouts).map(([key, value], index) => (
         <Collapse key={index} id={index} title={key} description={value} />
