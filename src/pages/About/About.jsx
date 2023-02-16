@@ -1,4 +1,4 @@
-import DrowpdonCard from "../../Components/Collapse/Collapse.jsx";
+import Collapse from "../../Components/Collapse/Collapse.jsx";
 import image from "../../assets/About/Section1.png";
 import "./about.css";
 
@@ -23,7 +23,7 @@ function About() {
       method to generate a "DropdownCard" component for each title-description pair, 
       with a unique key "index" and "id" prop */}
       {Object.entries(abouts).map(([key, value], index) => (
-        <DrowpdonCard key={index} id={index} title={key} description={value} />
+        <Collapse key={index} id={index} title={key} description={value} />
       ))}
     </div>
     </main>
